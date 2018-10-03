@@ -1,3 +1,5 @@
+import imgRobotMyDil from '../../assets/img/info/robotmydil.jpg'
+
 const hotposts = {
   outside: [
     {
@@ -14,7 +16,10 @@ const hotposts = {
       text: 'Bancs',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Détentez-Vous',
+        text:'espace détente : Un environnement détente et repos est destiné aux étudiants. Le doux du sud permet de profiter pleinement de son temps de pause et de faire le plein de vitamine D. ',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }
   ],
@@ -27,13 +32,16 @@ const hotposts = {
       type: 'door',
       nextScene: 'outside'
     }, {
-      id: 'secretaria',
+      id: 'secretariat',
       pitch: -17.94462892729827,
       yaw: -129.3478479304976,
       text: 'Secrétaria',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Le Secrétariat',
+        text:'C’est ici que l’aspect administratif est géré. Vous pouvez aussi poser toutes vos questions et l’administration s\'efforcera de vous répondre.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'hall',
@@ -59,7 +67,10 @@ const hotposts = {
       text: 'Premier Etage',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'L\'etage',
+        text:'À l’étage vous trouverez l’ensemble des membres de l’équipe : relation jeune, relation entreprise, les responsables pédagogiques et la directrice.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'myDil',
@@ -75,7 +86,10 @@ const hotposts = {
       text: 'A DEFINIR',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Time to Chill',
+        text:'Pour des journées d’hiver ou à la recherche d’un confort inégalable, vous avez au sein du campus un espace détente avec canapé et fauteuil pour un repos des plus optimal entre deux cours.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'cafeteria',
@@ -108,7 +122,11 @@ const hotposts = {
       text: 'Objets connectés',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'MyDil',
+        text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        text2:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        img: imgRobotMyDil,
+        alert: 'step'
       }
     },
   ],
