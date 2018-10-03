@@ -67,13 +67,13 @@ const scenes = {
     infos: {
       left: {
         image: myDil1,
-        title: 'uhnfknx',
-        description: 'kjbvkjbv'
+        title: 'L’occulus Rift',
+        description: 'Découvrez l’oculus rift avec sa nouvelle forme d’immersion en 3D. Essayez vous au développement d’environnement 3D et tentez de concevoir un projet innovant au cours de votre cursus. Retrouvez aussi d’autre objet connecté comme : \n\n \n\n • Les nouvelles technologies de réalité augmentée (Hololens, ...). \n\n \n\n • Les drones et leurs nouvelles applications.'
       },
       right: {
         image: myDil2,
-        title: 'skngchg',
-        description: 'uhkdsuhuhkds kdsuhuhkdsuhuhk dsuhuhkdsuhuhkdsuhuhkdsuhuhkdsuhuhkdsuh uhkdsuhuhkdsuhuhkdsuh uhkdsuhuhkdsuh'
+        title: 'Nao, le robot humanoïde',
+        description: 'Inventez le compagnon de demain. Découvrez un objet connecté de nouvelle génération et concevez avec son aide des instructions inédites tout au long de votre cursus. Retrouvez aussi d’autre objet connecté comme : \n\n \n\n • L’impression 3D pour le prototypage. \n\n \n\n • Les outils collaboratifs innovants comme la surface hub.\n\n \n\n • Les montres, les bracelets….'
       }
     }
   },
