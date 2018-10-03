@@ -39,7 +39,7 @@ function StepAlert2(props) {
     );
   }
   function StepAlert(props) {
-      return props.step === 1 ? <StepAlert1 /> : <StepAlert2 />
+      return props.step === 1 ? <StepAlert1 {...props} /> : <StepAlert2 {...props} />
   }
 
 export default StepAlert;

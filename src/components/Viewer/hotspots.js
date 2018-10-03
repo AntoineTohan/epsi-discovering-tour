@@ -21,6 +21,19 @@ const hotposts = {
         img: imgRobotMyDil,
         alert: 'basic'
       }
+    },
+    {
+      id: 'foodTruck',
+      pitch: 2.37947554363591,
+      yaw: 110.65829388174072,
+      text: 'Food truck',
+      type: 'info',
+      modal: {
+        title: 'Foodtruck',
+        text:'Un foodtruck présent tous les midis pour satisfaire l’appétit de tout le monde.',
+        img: imgRobotMyDil,
+        alert: 'basic'
+      }
     }
   ],
   reception: [
@@ -43,7 +56,21 @@ const hotposts = {
         img: imgRobotMyDil,
         alert: 'basic'
       }
-    }, {
+    }, 
+    {
+      id: 'visitorInfo',
+      pitch: -10.94462892729827,
+      yaw: -30.3478479304976,
+      text: 'visitorInfo',
+      type: 'info',
+      modal: {
+        title: 'Le Secrétariat',
+        text:'À tout moment de votre visite n’hésitez pas à revenir par ici pour nous contacter.',
+        img: imgRobotMyDil,
+        alert: 'contact',
+        IsAlreadyPass:false
+      }
+    },{
       id: 'hall',
       pitch: -3.5219547682258354,
       yaw: -2.893240305042475,
@@ -124,7 +151,7 @@ const hotposts = {
       modal: {
         title: 'MyDil',
         text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
-        text2:'- bite 1 - bite 2',
+        text2:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
         img: imgRobotMyDil,
         alert: 'step'
       }
@@ -145,7 +172,10 @@ const hotposts = {
       text: 'Distributeur à boissons/café/friandises',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Coin Café',
+        text:'Diverses collations à votre disposition et à moindre coût.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'babyfoot',
@@ -154,7 +184,10 @@ const hotposts = {
       text: 'Babyfoot',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Loisir !',
+        text:' Vous cherchez à vous départager ? Une partie de babyfoot et c’est réglé.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'hallway',
@@ -170,7 +203,10 @@ const hotposts = {
       text: 'Frigots / Micro-ondes',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Coin Cuisisne ',
+        text:'L’espace le plus important du campus, la cafétéria avec micro-ondes et frigos pour vous restaurer comme il se doit pour réussir votre scolarité dans les meilleures conditions.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }
   ],
@@ -196,6 +232,29 @@ const hotposts = {
       text: 'Retourner au hall',
       type: 'arrow',
       nextScene: 'hall'
+    }
+  ],
+  course: [
+    {
+      id: 'hallway',
+      pitch: -10.541255449345375,
+      yaw: 30.668550751941765,
+      text: 'Retourner au hall',
+      type: 'door',
+      nextScene: 'hallway'
+    }, {
+      id: 'coursesDescription',
+      pitch: 0.541255449345375,
+      yaw:  3.668550751941765,
+      text: 'description des cours',
+      type: 'info',
+      modal: {
+        title: 'Compétence',
+        text1:' Bachelor Epsi - Concepteur Intégrateur Devops : Titre certifié niveau II “Administrateur Système Réseaux et Bases de Données” ou Titre certifié niveau II “ Concepteur Développeur Informatique”.',
+        text2:' Bachelor Wis - : Chef de Projet Digital : Titre RNCP certifié de niveau II « Responsable de communication » ou Titre RNCP certifié de niveau II «Responsable management opérationnel commercial et marketing» et Titre RNCP certifié de niveau III «Développeur(se) Logiciel»',
+        img: imgRobotMyDil,
+        alert: 'step'
+      }
     }
   ]
 }
