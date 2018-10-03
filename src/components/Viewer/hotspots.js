@@ -1,3 +1,5 @@
+import imgRobotMyDil from '../../assets/img/info/robotmydil.jpg'
+
 const hotposts = {
   outside: [
     {
@@ -14,7 +16,23 @@ const hotposts = {
       text: 'Bancs',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Détentez-Vous',
+        text:'espace détente : Un environnement détente et repos est destiné aux étudiants. Le doux du sud permet de profiter pleinement de son temps de pause et de faire le plein de vitamine D. ',
+        img: imgRobotMyDil,
+        alert: 'basic'
+      }
+    },
+    {
+      id: 'foodTruck',
+      pitch: 2.37947554363591,
+      yaw: 110.65829388174072,
+      text: 'Food truck',
+      type: 'info',
+      modal: {
+        title: 'Foodtruck',
+        text:'Un foodtruck présent tous les midis pour satisfaire l’appétit de tout le monde.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     },
     {
@@ -37,13 +55,16 @@ const hotposts = {
       type: 'door',
       nextScene: 'outside'
     }, {
-      id: 'secretaria',
+      id: 'secretariat',
       pitch: -17.94462892729827,
       yaw: -129.3478479304976,
       text: 'Secrétaria',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Le Secrétariat',
+        text:'C’est ici que l’aspect administratif est géré. Vous pouvez aussi poser toutes vos questions et l’administration s\'efforcera de vous répondre.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, 
     {
@@ -53,7 +74,11 @@ const hotposts = {
       text: 'visitorInfo',
       type: 'info',
       modal: {
-        title: 'Visitors Infos'
+        title: 'Le Secrétariat',
+        text:'À tout moment de votre visite n’hésitez pas à revenir par ici pour nous contacter.',
+        img: imgRobotMyDil,
+        alert: 'contact',
+        IsAlreadyPass:false
       }
     },{
       id: 'hall',
@@ -79,8 +104,10 @@ const hotposts = {
       text: 'Premier Etage',
       type: 'info',
       modal: {
-        title: 'TITRE',
-        title2: 'titre2'
+        title: 'L\'etage',
+        text:'À l’étage vous trouverez l’ensemble des membres de l’équipe : relation jeune, relation entreprise, les responsables pédagogiques et la directrice.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'myDil',
@@ -96,8 +123,11 @@ const hotposts = {
       text: 'A DEFINIR',
       type: 'info',
       modal: {
-        title: 'TITRE'
-       }
+        title: 'Time to Chill',
+        text:'Pour des journées d’hiver ou à la recherche d’un confort inégalable, vous avez au sein du campus un espace détente avec canapé et fauteuil pour un repos des plus optimal entre deux cours.',
+        img: imgRobotMyDil,
+        alert: 'basic'
+      }
     }, {
       id: 'cafeteria',
       pitch: -10.18561755685819,
@@ -129,7 +159,11 @@ const hotposts = {
       text: 'Objets connectés',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'MyDil',
+        text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        text2:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        img: imgRobotMyDil,
+        alert: 'step'
       }
     },
   ],
@@ -148,7 +182,10 @@ const hotposts = {
       text: 'Distributeur à boissons/café/friandises',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Coin Café',
+        text:'Diverses collations à votre disposition et à moindre coût.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'babyfoot',
@@ -157,7 +194,10 @@ const hotposts = {
       text: 'Babyfoot',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'Loisir !',
+        text:' Vous cherchez à vous départager ? Une partie de babyfoot et c’est réglé.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }, {
       id: 'hallway',
@@ -173,7 +213,10 @@ const hotposts = {
       text: 'Frigots / Micro-ondes',
       type: 'info',
       modal: {
-        title: 'TITRE',
+        title: 'Coin Cuisisne ',
+        text:'L’espace le plus important du campus, la cafétéria avec micro-ondes et frigos pour vous restaurer comme il se doit pour réussir votre scolarité dans les meilleures conditions.',
+        img: imgRobotMyDil,
+        alert: 'basic'
       }
     }
   ],
@@ -216,7 +259,11 @@ const hotposts = {
       text: 'description des cours',
       type: 'info',
       modal: {
-        title: 'TITRE',
+        title: 'Compétence',
+        text1:' Bachelor Epsi - Concepteur Intégrateur Devops : Titre certifié niveau II “Administrateur Système Réseaux et Bases de Données” ou Titre certifié niveau II “ Concepteur Développeur Informatique”.',
+        text2:' Bachelor Wis - : Chef de Projet Digital : Titre RNCP certifié de niveau II « Responsable de communication » ou Titre RNCP certifié de niveau II «Responsable management opérationnel commercial et marketing» et Titre RNCP certifié de niveau III «Développeur(se) Logiciel»',
+        img: imgRobotMyDil,
+        alert: 'step'
       }
     }
   ]
