@@ -2,15 +2,10 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Navbar from './components/Navbar/Navbar'
-import Stepper from './components/Stepper/Stepper'
 import Viewer from './components/Viewer/Viewer'
 import Footer from './components/Footer/Footer'
 import Card from './components/Card/Card'
-
-
 import getScene from './components/Viewer/scenes'
-
-
 import './App.css'
 
 const styles = theme => ({
@@ -41,9 +36,7 @@ const styles = theme => ({
 })
 
 class App extends Component {
-  
   constructor(props) {    
-    
     super(props)
 
     this.state = {
@@ -63,7 +56,6 @@ class App extends Component {
     return (
       <React.Fragment>
           <Navbar/>
-          <Stepper handleSceneChange={this.handleSceneChange} sceneKey={sceneKey}/>
           <main className={classes.heroUnit}>
             <Viewer handleSceneChange={this.handleSceneChange} sceneKey={sceneKey} />
           </main>
@@ -79,7 +71,7 @@ class App extends Component {
           </div>
           <Footer/>
       </React.Fragment>
-    );
+    )
   }
 }
 

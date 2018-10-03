@@ -1,15 +1,10 @@
 import React from 'react'
-
+import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
-import StepperBase from '@material-ui/core/Stepper'
+import Stepper from '@material-ui/core/Stepper'
 import Step from '@material-ui/core/Step'
 import StepLabel from '@material-ui/core/StepLabel'
 import Tooltip from '@material-ui/core/Tooltip'
-
-import outside   from '../../assets/img/stepper/outside.png'
-import myDil     from '../../assets/img/stepper/myDil.png'
-import cafeteria from '../../assets/img/stepper/cafeteria.png'
-import classroom from '../../assets/img/stepper/classroom.png'
 
 const styles = theme => ({
   root: {
@@ -54,28 +49,45 @@ const styles = theme => ({
   }
 })
 
-const steps = [
-  {
-    id: 'outside',
-    tooltip: 'Aller à l\'extérieur',
-    icon: outside
-  }, {
-    id: 'myDil',
-    tooltip: 'Aller dans le laboratoire',
-    icon: myDil
-  }, {
-    id: 'cafeteria',
-    tooltip: 'Aller dans la cafétéria',
-    icon: cafeteria
-  }, {
-    id: 'classroom',
-    tooltip: 'Aller dans une salle de classe',
-    icon: classroom
+class DesktopStepper extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      activeSteps: ['outside'],
+    }
   }
-]
+
+  componentWillReceiveProps(props) {
+    if(!this.state.activeSteps.includes(props.sceneKey)) {
+      this.setState({activeSteps: [...this.state.activeSteps, props.sceneKey]})
+    }
+  }
+
+  render() {
+    const { classes, handleSceneChange, steps } = this.props
+    const { activeSteps } = this.state
+  
+    return (
+      <div className={classes.root}>
+        <Stepper connector={<StepConnector />} >
+          {steps.map((step, index) => (
+              <Step key={step.id} >
+                <StepLabel
+                  onClick={() => handleSceneChange(step.id)}
+                  StepIconComponent={() => StepIcon(step.icon, step.tooltip, activeSteps.includes(step.id), classes)}
+                />
+              </Step>
+            )
+          )}
+        </Stepper>
+      </div>
+    )
+  }
+}
 
 const StepConnector = () => (
-  <div style={{width: '100%'}}></div>
+  <div style={{width: '100%', borderBottom: 'dotted grey'}}></div>
 )
 
 const StepIcon = (icon, tooltip, isVisited, classes) => (
@@ -86,25 +98,8 @@ const StepIcon = (icon, tooltip, isVisited, classes) => (
   </Tooltip>
 )
 
-class Stepper extends React.Component {
-  render() {
-    const { classes, handleSceneChange, activeSteps } = this.props  
-    return (
-      <div className={classes.root}>
-        <StepperBase connector={<StepConnector />} >
-          {steps.map((step, index) => (
-              <Step key={step.id} >
-                <StepLabel
-                  onClick={() => handleSceneChange(step.id)}
-                  StepIconComponent={() => StepIcon(step.icon, step.tooltip, activeSteps.includes(step.id), classes)}
-                />
-              </Step>
-            )
-          )}
-        </StepperBase>
-      </div>
-    )
-  }
+DesktopStepper.propTypes = {
+  classes: PropTypes.object,
 }
 
-export default withStyles(styles)(Stepper)
+export default withStyles(styles)(DesktopStepper)
