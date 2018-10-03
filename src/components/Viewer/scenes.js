@@ -1,6 +1,7 @@
 import outside   from '../../assets/img/scenes/outside.png'
 import reception from '../../assets/img/scenes/reception.png'
 import hall      from '../../assets/img/scenes/hall.png'
+import course from '../../assets/img/scenes/classroom.png'
 
 import myDil     from '../../assets/img/scenes/myDil.png'
 import myDil1 from '../../assets/img/info/vrmydil.jpg'
@@ -8,6 +9,8 @@ import myDil2 from '../../assets/img/info/robotmydil.jpg'
 
 import cafeteria from '../../assets/img/scenes/cafeteria.png'
 import hallway   from '../../assets/img/scenes/hallway.png'
+
+
 
 const scenes = {
   outside: {
@@ -93,6 +96,22 @@ const scenes = {
   hallway: {
     path: hallway,
     title: 'Couloir',
+    infos: {
+      left: {
+        image: 'kbjkdfn',
+        title: 'uhnfknx',
+        description: 'kjbvkjbv'
+      },
+      right: {
+        image: 'sbdvkjbv',
+        title: 'skdbrejbfke',
+        description: 'uhkdsuh'
+      }
+    }
+  },
+  course: {
+    path: course,
+    title: 'salledecours',
     infos: {
       left: {
         image: 'kbjkdfn',
