@@ -6,7 +6,9 @@ import Viewer from './components/Viewer/Viewer'
 import Footer from './components/Footer/Footer'
 import Card from './components/Card/Card'
 
+
 import getScene from './components/Viewer/scenes'
+
 
 import './App.css'
 
@@ -38,7 +40,9 @@ const styles = theme => ({
 })
 
 class App extends Component {
-  constructor(props) {
+  
+  constructor(props) {    
+    
     super(props)
 
     this.state = {
@@ -51,7 +55,6 @@ class App extends Component {
   handleSceneChange(sceneKey) {
     this.setState({sceneKey: sceneKey})
   }
-
   render() {
     const { sceneKey } = this.state
     const { classes } = this.props

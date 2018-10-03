@@ -34,6 +34,16 @@ const hotposts = {
         img: imgRobotMyDil,
         alert: 'basic'
       }
+    },
+    {
+      id: 'foodTruck',
+      pitch: 2.37947554363591,
+      yaw: 110.65829388174072,
+      text: 'Food truck',
+      type: 'info',
+      modal: {
+        title: 'Foodtrucks'
+      }
     }
   ],
   reception: [
