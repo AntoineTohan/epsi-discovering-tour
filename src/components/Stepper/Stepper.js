@@ -12,6 +12,9 @@ import cafeteria from '../../assets/img/stepper/cafeteria.png'
 import classroom from '../../assets/img/stepper/classroom.png'
 
 const styles = theme => ({
+  root: {
+    marginTop: '8px'
+  },
   button: {
     marginRight: theme.spacing.unit,
   },
@@ -96,8 +99,6 @@ class HorizontalLinearStepper extends React.Component {
             )
           )}
         </Stepper>
-        <div>
-        </div>
       </div>
     );
   }
