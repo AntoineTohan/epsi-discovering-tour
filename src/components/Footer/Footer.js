@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles'
 import Typography from '@material-ui/core/Typography'
-import Favorite from '@material-ui/icons/Favorite'
 
 const styles = theme => ({
     footer: {
@@ -17,6 +16,9 @@ const styles = theme => ({
     },
     blackColor: {
         backgroundColor: 'black',
+    },
+    iconRed: {
+      color: 'red',
     }
   })
 class Footer extends Component {
@@ -25,7 +27,7 @@ class Footer extends Component {
     return (
       <footer className={classes.footer}>
         <Typography variant="subheading" align="center" color="textSecondary">
-          Made with ❤️in Montpellier !
+          Made with <span role="img" aria-label="love" className={classes.iconRed}>❤️</span> in Montpellier !
         </Typography>
       </footer>
     );
