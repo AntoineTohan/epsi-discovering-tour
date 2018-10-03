@@ -7,7 +7,9 @@ import Viewer from './components/Viewer/Viewer'
 import Footer from './components/Footer/Footer'
 import Card from './components/Card/Card'
 
+
 import getScene from './components/Viewer/scenes'
+
 
 import './App.css'
 
@@ -39,7 +41,9 @@ const styles = theme => ({
 })
 
 class App extends Component {
-  constructor(props) {
+  
+  constructor(props) {    
+    
     super(props)
 
     this.state = {
@@ -52,7 +56,6 @@ class App extends Component {
   handleSceneChange(sceneKey) {
     this.setState({sceneKey: sceneKey})
   }
-
   render() {
     const { sceneKey } = this.state
     const { classes } = this.props
@@ -66,11 +69,21 @@ class App extends Component {
           </main>
           <div className={classes.cardContainer}>
             <Grid container className={`${classes.layout} ${classes.cardGrid}`}>
+<<<<<<< HEAD
+              <Grid item container xs={6} justify={"center"}>
+                <Card image={scene.infos.left.image} title={scene.infos.left.title} description={scene.infos.left.description} 
+               />
+              </Grid>
+              <Grid item container xs={6} justify={"center"}>
+                <Card image={scene.infos.right.image} title={scene.infos.right.title} description={scene.infos.right.description}
+                  />
+=======
               <Grid item container sm={12} md={12} lg={6} justify={"center"}>
                 <Card image={scene.infos.left.image} title={scene.infos.left.title} description={scene.infos.left.description}/>
               </Grid>
               <Grid item container sm={12} md={12} lg={6} justify={"center"}>
                 <Card image={scene.infos.right.image} title={scene.infos.right.title} description={scene.infos.right.description} />
+>>>>>>> c0cf8e76f157f26dc96fe84221fb0a2930c5faaa
               </Grid>
             </Grid>
           </div>

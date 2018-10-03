@@ -16,6 +16,16 @@ const hotposts = {
       modal: {
         title: 'TITRE'
       }
+    },
+    {
+      id: 'foodTruck',
+      pitch: 2.37947554363591,
+      yaw: 110.65829388174072,
+      text: 'Food truck',
+      type: 'info',
+      modal: {
+        title: 'Foodtrucks'
+      }
     }
   ],
   reception: [
@@ -35,7 +45,17 @@ const hotposts = {
       modal: {
         title: 'TITRE'
       }
-    }, {
+    }, 
+    {
+      id: 'visitorInfo',
+      pitch: -10.94462892729827,
+      yaw: -30.3478479304976,
+      text: 'visitorInfo',
+      type: 'info',
+      modal: {
+        title: 'Visitors Infos'
+      }
+    },{
       id: 'hall',
       pitch: -3.5219547682258354,
       yaw: -2.893240305042475,
@@ -59,7 +79,8 @@ const hotposts = {
       text: 'Premier Etage',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'TITRE',
+        title2: 'titre2'
       }
     }, {
       id: 'myDil',
@@ -76,7 +97,7 @@ const hotposts = {
       type: 'info',
       modal: {
         title: 'TITRE'
-      }
+       }
     }, {
       id: 'cafeteria',
       pitch: -10.18561755685819,
@@ -152,7 +173,7 @@ const hotposts = {
       text: 'Frigots / Micro-ondes',
       type: 'info',
       modal: {
-        title: 'TITRE'
+        title: 'TITRE',
       }
     }
   ],
@@ -178,6 +199,25 @@ const hotposts = {
       text: 'Retourner au hall',
       type: 'arrow',
       nextScene: 'hall'
+    }
+  ],
+  course: [
+    {
+      id: 'hallway',
+      pitch: -10.541255449345375,
+      yaw: 30.668550751941765,
+      text: 'Retourner au hall',
+      type: 'door',
+      nextScene: 'hallway'
+    }, {
+      id: 'coursesDescription',
+      pitch: 0.541255449345375,
+      yaw:  3.668550751941765,
+      text: 'description des cours',
+      type: 'info',
+      modal: {
+        title: 'TITRE',
+      }
     }
   ]
 }
