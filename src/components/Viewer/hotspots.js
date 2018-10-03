@@ -124,7 +124,7 @@ const hotposts = {
       modal: {
         title: 'MyDil',
         text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
-        text2:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        text2:'- bite 1 - bite 2',
         img: imgRobotMyDil,
         alert: 'step'
       }

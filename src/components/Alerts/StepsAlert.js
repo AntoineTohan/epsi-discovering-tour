@@ -13,7 +13,7 @@ function StepAlert1(props) {
             </Grid>
             <Grid item xs={6}>
                 <Typography variant="body2" gutterBottom>
-                    bite 1
+                    {props.text}
                 </Typography>
             </Grid>
         </Grid>
@@ -31,7 +31,7 @@ function StepAlert2(props) {
               </Grid>
               <Grid item xs={6}>
                   <Typography variant="body2" gutterBottom>
-                      bite 2
+                  {props.text}
                   </Typography>
               </Grid>
           </Grid>
