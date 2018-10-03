@@ -64,10 +64,10 @@ class App extends Component {
           </main>
           <div className={classes.cardContainer}>
             <Grid container className={`${classes.layout} ${classes.cardGrid}`}>
-              <Grid item container xs={6} justify={"center"}>
+              <Grid item container sm={12} md={12} lg={6} justify={"center"}>
                 <Card image={scene.infos.left.image} title={scene.infos.left.title} description={scene.infos.left.description}/>
               </Grid>
-              <Grid item container xs={6} justify={"center"}>
+              <Grid item container sm={12} md={12} lg={6} justify={"center"}>
                 <Card image={scene.infos.right.image} title={scene.infos.right.title} description={scene.infos.right.description} />
               </Grid>
             </Grid>
