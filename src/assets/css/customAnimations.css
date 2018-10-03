@@ -1,0 +1,53 @@
+#outside {
+  animation: fadeOutside 2s ease-out;
+}
+
+#reception {
+  animation: fadeReception 2s ease-out;
+}
+
+#hall {
+  animation: fadeHall 2s ease-out;
+}
+
+#myDil {
+  animation: fadeMyDil 2s ease-out;
+}
+
+#cafeteria {
+  animation: fadeCafeteria 2s ease-out;
+}
+
+#hallway {
+  animation: fadeHallway 2s ease-out;
+}
+
+@keyframes fadeOutside {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeReception {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeHall {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeMyDil {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeCafeteria {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}
+
+@keyframes fadeHallway {
+  0% {opacity: 0; }
+  100% {opacity: 1; }
+}

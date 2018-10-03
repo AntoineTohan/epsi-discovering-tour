@@ -1,0 +1,44 @@
+{
+	"env": {
+	  "browser": true,
+	  "es6" : true,
+	  "cypress/globals": true
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+	  "ecmaVersion": 6,
+	  "ecmaFeatures": {
+		"jsx": true
+	  }
+	},
+	"settings": {
+	  "react": {
+		"version": "15.5"
+	  }
+	},
+	"plugins": [
+	  "classes"
+	],
+	"extends": [
+	  "airbnb",
+	  "prettier",
+	  "prettier/react"
+	],
+	"rules": {
+	  "no-use-before-define": 0,
+	  "react/jsx-filename-extension" : 0,
+	  "jsx-a11y/interactive-supports-focus": 0,
+	  "jsx-a11y/no-static-element-interactions": 0,
+	  "classes/name": [2, "class", "method"],
+	  "classes/style": 2,
+	  "react/forbid-prop-types": [1,{ "forbid":["any", "array"]}],
+	  "import/no-extraneous-dependencies": ["error", {"packageDir": "./"}],
+	  "no-console": 0,
+	  "no-param-reassign": 0,
+	  "arrow-body-style": 0,
+	  "no-underscore-dangle": 0,
+	  "react/no-danger": 0,
+	  "import/prefer-default-export": 0,
+	  "react/prefer-stateless-function": 0
+	}
+  }
