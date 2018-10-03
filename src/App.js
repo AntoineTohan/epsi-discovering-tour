@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
 import Navbar from './components/Navbar/Navbar'
+import Stepper from './components/Stepper/Stepper'
 import Viewer from './components/Viewer/Viewer'
 import Footer from './components/Footer/Footer'
 import Card from './components/Card/Card'
@@ -59,6 +60,7 @@ class App extends Component {
     return (
       <React.Fragment>
           <Navbar/>
+          <Stepper handleSceneChange={this.handleSceneChange} sceneKey={sceneKey}/>
           <main className={classes.heroUnit}>
             <Viewer handleSceneChange={this.handleSceneChange} sceneKey={sceneKey} />
           </main>
