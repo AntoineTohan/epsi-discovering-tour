@@ -68,8 +68,8 @@ class Footer extends Component {
     const { checked } = this.state;
 
     return (
-      <Grid container xs={12} justify= 'center' className={classes.colorFooter}>
-        <footer>
+      <Grid container justify= 'center' className={classes.colorFooter}>
+        <footer xs={12}>
         <div className={classes.root}>
           <div className={classes.container}>
             <Tooltip title="Pierre Taiton">
@@ -77,9 +77,10 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/pierre-taiton-58a80313a/' target="_blank">
             <Avatar
                 src={Pierre}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/> </a>
             </Grow>
             </Tooltip>
             <Tooltip title="Antoine Durand">
@@ -87,9 +88,10 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/antoine-durand-8a40b2131/' target="_blank">
             <Avatar
                 src={Antoine}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/> </a>
             </Grow>
             </Tooltip>
             <Tooltip title="Baptiste De La Faire">
@@ -97,16 +99,18 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/baptiste-de-la-faire-133b72151/' target="_blank">
             <Avatar
                 src={Baptiste}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow>
             </Tooltip>
             <Tooltip title="Yannick Jammes">
             <Grow in={checked}>
+            <a rel="noopener noreferrer" href='https://www.linkedin.com/in/yannick-jammes-0ba512140/' target="_blank">
             <Avatar
                 src={Yan}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow>
             </Tooltip>
             <Typography checked={checked} onClick={this.handleChange} aria-label="Collapse"  variant="subheading" align="center" color="textSecondary">
@@ -118,9 +122,10 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/marouane-ouzal-%F0%9F%91%93-920ab1123/' target="_blank">
               <Avatar
                 src={Marouane}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow>
             </Tooltip>
             <Tooltip title="Antonin Piroth">
@@ -128,10 +133,11 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}
-            >     
+            >
+            <a rel="noopener noreferrer" href='https://www.linkedin.com/in/antonin-piroth-62b82b134/' target="_blank">
             <Avatar
                 src={Antonin}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow>
             </Tooltip>
             <Tooltip title="Maxence Zini">
@@ -139,9 +145,10 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/maxence-zini/' target="_blank">
             <Avatar
                 src={Maxence}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow>
             </Tooltip>
             <Tooltip title="Alexandre Guerder">
@@ -149,9 +156,10 @@ class Footer extends Component {
               in={checked}
               style={{ transformOrigin: '0 0 0' }}
               {...(checked ? { timeout: 1000 } : {})}>
+              <a rel="noopener noreferrer" href='https://www.linkedin.com/in/alexandre-guerder-43500a162/' target="_blank">
             <Avatar
                 src={Alexandre}
-                className={classNames(classes.avatar, classes.bigAvatar)}/>
+                className={classNames(classes.avatar, classes.bigAvatar)}/></a>
             </Grow> 
             </Tooltip>
           </div>

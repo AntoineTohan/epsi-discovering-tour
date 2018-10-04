@@ -15,14 +15,14 @@ const getText = (text) => text ? text.split('\n').map(line => (
 )) : ''
 
 function StepAlert1(props) {
-  const { classes, theme, text } = props;
+  const { classes, text } = props;
 
   return (
         <Grid container>
-            <Grid item xs={6}>
-                <img alt='Sécretariat 1' src={imgSecretariat}/>
+            <Grid item sm={12} md={12} lg={6}>
+                <img src={props.image}/>
             </Grid>
-            <Grid item xs={6} className={classes.texte} alignItems='left'>
+            <Grid item sm={12} md={12} lg={6} className={classes.texte} alignItems='left'>
                 <Typography variant="body2" gutterBottom>
                     {getText(text)}
                 </Typography>
@@ -33,12 +33,12 @@ function StepAlert1(props) {
 }
 
 function StepAlert2(props) {
-    const { classes, theme, text } = props;
+    const { classes, text } = props;
   
     return (
           <Grid container>
               <Grid item xs={6}>
-                  <img alt='Sécretariat 2' src={imgSecretariat}/>
+                <img src={props.image}/>
               </Grid>
               <Grid item xs={6} className={classes.texte} alignItems='left'>
                 {getText(text)}
