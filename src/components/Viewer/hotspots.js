@@ -1,4 +1,13 @@
 import imgRobotMyDil from '../../assets/img/info/robotmydil.jpg'
+import baby from '../../assets/img/info/baby.jpg'
+import coffe from '../../assets/img/info/coffee.jpg'
+import detente from '../../assets/img/info/detente.jpg'
+import detenteExterieur from '../../assets/img/info/detente-2.jpg'
+import food from '../../assets/img/info/food.jpg'
+import mydil from '../../assets/img/info/mydil.jpg'
+import secretariat from '../../assets/img/info/secretaria-m.jpg'
+import truck from '../../assets/img/info/truck.jpg'
+
 
 const hotposts = {
   outside: [
@@ -18,7 +27,7 @@ const hotposts = {
       modal: {
         title: 'Détentez-Vous',
         text:'espace détente : Un environnement détente et repos est destiné aux étudiants. Le doux du sud permet de profiter pleinement de son temps de pause et de faire le plein de vitamine D. ',
-        img: imgRobotMyDil,
+        img: detenteExterieur,
         alert: 'basic'
       }
     },
@@ -31,7 +40,7 @@ const hotposts = {
       modal: {
         title: 'Foodtruck',
         text:'Un foodtruck présent tous les midis pour satisfaire l’appétit de tout le monde.',
-        img: imgRobotMyDil,
+        img: truck,
         alert: 'basic'
       }
     },
@@ -63,7 +72,7 @@ const hotposts = {
       modal: {
         title: 'Le Secrétariat',
         text:'C’est ici que l’aspect administratif est géré. Vous pouvez aussi poser toutes vos questions et l’administration s\'efforcera de vous répondre.',
-        img: imgRobotMyDil,
+        img: secretariat,
         alert: 'basic'
       }
     }, 
@@ -76,7 +85,7 @@ const hotposts = {
       modal: {
         title: 'Le Secrétariat',
         text:'À tout moment de votre visite n’hésitez pas à revenir par ici pour nous contacter.',
-        img: imgRobotMyDil,
+        img: secretariat,
         alert: 'contact',
         IsAlreadyPass:false
       }
@@ -125,7 +134,7 @@ const hotposts = {
       modal: {
         title: 'Time to Chill',
         text:'Pour des journées d’hiver ou à la recherche d’un confort inégalable, vous avez au sein du campus un espace détente avec canapé et fauteuil pour un repos des plus optimal entre deux cours.',
-        img: imgRobotMyDil,
+        img: detente,
         alert: 'basic'
       }
     }, {
@@ -162,7 +171,7 @@ const hotposts = {
         title: 'MyDil',
         text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
         text2:'-Robot \n -Casque Vr \n Ordi 32 GRam \n -imprimante 3d',
-        img: imgRobotMyDil,
+        img: mydil,
         alert: 'step'
       }
     },
@@ -184,7 +193,7 @@ const hotposts = {
       modal: {
         title: 'Coin Café',
         text:'Diverses collations à votre disposition et à moindre coût.',
-        img: imgRobotMyDil,
+        img: coffe,
         alert: 'basic'
       }
     }, {
@@ -196,7 +205,7 @@ const hotposts = {
       modal: {
         title: 'Loisir !',
         text:' Vous cherchez à vous départager ? Une partie de babyfoot et c’est réglé.',
-        img: imgRobotMyDil,
+        img: baby,
         alert: 'basic'
       }
     }, {
@@ -215,7 +224,7 @@ const hotposts = {
       modal: {
         title: 'Coin Cuisisne ',
         text:'L’espace le plus important du campus, la cafétéria avec micro-ondes et frigos pour vous restaurer comme il se doit pour réussir votre scolarité dans les meilleures conditions.',
-        img: imgRobotMyDil,
+        img: food,
         alert: 'basic'
       }
     }
