@@ -103,12 +103,12 @@ class Viewer extends Component {
     }
     
     if(hotspot.modal) {
-      if(hotspot.modal.alert=='basic')
+      if(hotspot.modal.alert==='basic')
       {
         openModal(hotspot.modal)
-      }else if(hotspot.modal.alert=='step'){
+      }else if(hotspot.modal.alert==='step'){
         openModalSteps(hotspot.modal)
-      }else if(hotspot.modal.alert=='contact'){
+      }else if(hotspot.modal.alert==='contact'){
         if(!hotspot.modal.IsAlreadyPass){
           openModal(hotspot.modal)
           hotspot.modal.IsAlreadyPass=true

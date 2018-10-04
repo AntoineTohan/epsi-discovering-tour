@@ -222,12 +222,12 @@ const hotposts = {
   ],
   hallway: [
     {
-      id: 'course',
+      id: 'classroom',
       pitch: -15.541255449345375,
       yaw: -45.668550751941765,
       text: 'Salle de cours',
       type: 'door',
-      nextScene: 'course'
+      nextScene: 'classroom'
     }, {
       id: 'cafeteria',
       pitch: -14.636699298091361,
@@ -244,7 +244,7 @@ const hotposts = {
       nextScene: 'hall'
     }
   ],
-  course: [
+  classroom: [
     {
       id: 'hallway',
       pitch: -10.541255449345375,

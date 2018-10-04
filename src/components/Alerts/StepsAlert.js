@@ -4,12 +4,10 @@ import imgSecretariat from '../../assets/img/info/robotmydil.jpg'
 import Grid from '@material-ui/core/Grid';
 
 function StepAlert1(props) {
-  const { classes, theme } = props;
-
   return (
         <Grid container>
             <Grid item xs={6}>
-                <img src={imgSecretariat}/>
+                <img alt='Sécretariat 1' src={imgSecretariat}/>
             </Grid>
             <Grid item xs={6}>
                 <Typography variant="body2" gutterBottom>
@@ -22,12 +20,10 @@ function StepAlert1(props) {
 }
 
 function StepAlert2(props) {
-    const { classes, theme } = props;
-  
     return (
           <Grid container>
               <Grid item xs={6}>
-                  <img src={imgSecretariat}/>
+                  <img alt='Sécretariat 2' src={imgSecretariat}/>
               </Grid>
               <Grid item xs={6}>
                   <Typography variant="body2" gutterBottom>

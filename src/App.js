@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Viewer from './components/Viewer/Viewer'
 import Footer from './components/Footer/Footer'
 import Card from './components/Card/Card'
+import Typography from '@material-ui/core/Typography';
 
 
 import getScene from './components/Viewer/scenes'
@@ -37,6 +38,18 @@ const styles = theme => ({
   cardGrid: {
     padding: `${theme.spacing.unit * 8}px 0`,
   },
+  title: {
+    fontFamily:'Roboto, sans-serif',
+    color: '#281c49',
+    fontSize:' 2rem',
+  },
+  text: {
+    fontFamily:'Montserrat, sans-serif',
+  },
+  hrSeparator:{
+    border: '1px solid #281c49',
+    width: '40%'
+  }
 })
 
 class App extends Component {
@@ -67,6 +80,10 @@ class App extends Component {
           </main>
           <div className={classes.cardContainer}>
             <Grid container className={`${classes.layout} ${classes.cardGrid}`}>
+              <Grid item container sm={12} md={12} lg={12} justify={"center"} direction="column" alignItems="center">
+              <Typography gutterBottom variant="headline" component="h1" className={`${classes.title}`}>Les informations utiles sur {scene.title.toLowerCase()}</Typography>
+              <hr className={`${classes.hrSeparator}`}/>
+              </Grid>
               <Grid item container sm={12} md={12} lg={6} justify={"center"}>
                 <Card image={scene.infos.left.image} title={scene.infos.left.title} description={scene.infos.left.description}/>
               </Grid>
