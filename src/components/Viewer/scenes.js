@@ -1,29 +1,29 @@
-import outside   from '../../assets/img/scenes/outside.png'
+import outside from '../../assets/img/scenes/outside.png'
 import reception from '../../assets/img/scenes/reception.png'
-import hall      from '../../assets/img/scenes/hall.png'
-import course from '../../assets/img/scenes/classroom.png'
+import hall from '../../assets/img/scenes/hall.png'
+import classroom from '../../assets/img/scenes/classroom.png'
 
-import myDil     from '../../assets/img/scenes/myDil.png'
+import myDil from '../../assets/img/scenes/myDil.png'
 import myDil1 from '../../assets/img/info/vrmydil.jpg'
 import myDil2 from '../../assets/img/info/robotmydil.jpg'
 
 import cafeteria from '../../assets/img/scenes/cafeteria.png'
-import hallway   from '../../assets/img/scenes/hallway.png'
+import hallway from '../../assets/img/scenes/hallway.png'
 
 
 
 const scenes = {
   outside: {
     path: outside,
-    title: 'Extérieur',
+    title: 'L\'extérieur',
     infos: {
       left: {
-        image: 'kbjkdfn',
+        image: 'azerty',
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'sbdvkjbv',
+        image: 'azerty',
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -31,15 +31,15 @@ const scenes = {
   },
   reception: {
     path: reception,
-    title: 'Réception',
+    title: 'La réception',
     infos: {
       left: {
-        image: 'kbjkdfn',
+        image: 'azerty',
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'sbdvkjbv',
+        image: 'azerty',
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -47,15 +47,15 @@ const scenes = {
   },
   hall: {
     path: hall,
-    title: 'Hall',
+    title: 'Le hall',
     infos: {
       left: {
-        image: 'kbjkdfn',
+        image: 'azerty',
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'sbdvkjbv',
+        image: 'azerty',
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -63,7 +63,7 @@ const scenes = {
   },
   myDil: {
     path: myDil,
-    title: 'MyDil',
+    title: 'Le laboratoire MyDil',
     infos: {
       left: {
         image: myDil1,
@@ -79,7 +79,7 @@ const scenes = {
   },
   cafeteria: {
     path: cafeteria,
-    title: 'Cafétéria',
+    title: 'La Cafétéria',
     infos: {
       left: {
         image: 'azerty',
@@ -95,23 +95,23 @@ const scenes = {
   },
   hallway: {
     path: hallway,
-    title: 'Couloir',
+    title: 'Les couloirs',
     infos: {
       left: {
-        image: 'kbjkdfn',
+        image: 'azerty',
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'sbdvkjbv',
+        image: 'azerty',
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
     }
   },
-  course: {
-    path: course,
-    title: 'salledecours',
+  classroom: {
+    path: classroom,
+    title: 'Les salle de cours',
     infos: {
       left: {
         image: 'azerty',
@@ -119,7 +119,7 @@ const scenes = {
         description: 'L’EPSI est une école d’informatique qui propose des programmes de Bac à Bac+5 et de la formation continue. Quel que soit votre profil ou votre situation, vous pouvez accéder à la formation informatique et à un des programmes EPSI en admission directe ou en admission parallèle. \n\n La formation informatique de l’EPSI se compose de deux cycles : \n\n • 1er  CYCLE : Le  programme Bachelor informatique, prépare les apprenants à un titre de niveau II (Bac +3/4) certifié par le RNCP . \n\n • 2nd CYCLE : Le programme Ingénierie  informatique  prépare les apprenants à un titre de niveau I (Bac+5) « Expert en informatique et système d’information » certifié par le RNCP. \n\n À partir de la 3ème année, les apprenants peuvent suivre leur formation informatique en initial ou par alternance.'
       },
       right: {
-        image: 'sbdvkjbv',
+        image: 'azerty',
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }

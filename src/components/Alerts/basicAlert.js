@@ -11,7 +11,7 @@ const styles = theme => ({
 });
 
 function MediaControlCard(props) {
-  const { classes, theme } = props;
+  const { classes } = props;
 
   return (
         <Grid container>
