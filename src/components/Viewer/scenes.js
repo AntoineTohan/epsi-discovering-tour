@@ -10,7 +10,23 @@ import myDil2 from '../../assets/img/info/robotmydil.jpg'
 import cafeteria from '../../assets/img/scenes/cafeteria.png'
 import hallway from '../../assets/img/scenes/hallway.png'
 
+import Snow from '../../assets/img/info/exte-neige.jpg'
+import Foodtruck from '../../assets/img/info/food-truc.jpg'
 
+import Course1 from '../../assets/img/info/cours.jpg'
+import Course2 from '../../assets/img/info/cours2.jpg'
+
+import Game from '../../assets/img/info/game.jpg'
+import Wei from '../../assets/img/info/wei.jpg'
+
+import hall1 from '../../assets/img/info/hall1.jpg'
+import hall2 from '../../assets/img/info/hall2.jpg'
+
+import salon1 from '../../assets/img/info/salon.jpg'
+import salon2 from '../../assets/img/info/detente-stand.jpg'
+
+import cafet1 from '../../assets/img/info/cafet.jpg'
+import cafet2 from '../../assets/img/info/cafet2.jpg'
 
 const scenes = {
   outside: {
@@ -18,12 +34,12 @@ const scenes = {
     title: 'L\'extérieur',
     infos: {
       left: {
-        image: 'azerty',
+        image: Foodtruck,
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'azerty',
+        image: Snow,
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -34,12 +50,12 @@ const scenes = {
     title: 'La réception',
     infos: {
       left: {
-        image: 'azerty',
+        image: hall1,
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'azerty',
+        image: hall2,
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -50,12 +66,12 @@ const scenes = {
     title: 'Le hall',
     infos: {
       left: {
-        image: 'azerty',
+        image: salon1,
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'azerty',
+        image: salon2,
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -82,12 +98,12 @@ const scenes = {
     title: 'La Cafétéria',
     infos: {
       left: {
-        image: 'azerty',
+        image: cafet1,
         title: 'Pour manger le midi !',
         description: ' Un espace aménagé pour la restauration du midi est disponible pour tous les étudiants. Cette espace se compose de frigo, micro-ondes et bouilloir pour vous permettre de réchauffer vos petits plats. En plus de cette zone un food truck sera toujours présent à l\'extérieur.'
       },
       right: {
-        image: 'azerty',
+        image: cafet2,
         title: 'Pour les petites faims !',
         description: 'Le campus dispose aussi de plusieurs distributeurs pour combler vos petites faims entre plusieurs cours. Machine à café, machine à boisson ou encore machine à sandwich. Tout est aménagé dans la salle de restauration pour votre confort.'
       }
@@ -98,12 +114,12 @@ const scenes = {
     title: 'Les couloirs',
     infos: {
       left: {
-        image: 'azerty',
+        image: Game,
         title: 'uhnfknx',
         description: 'kjbvkjbv'
       },
       right: {
-        image: 'azerty',
+        image: Wei,
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
@@ -114,12 +130,12 @@ const scenes = {
     title: 'Les salle de cours',
     infos: {
       left: {
-        image: 'azerty',
+        image: Course1,
         title: 'Le cursus EPSI',
-        description: 'L’EPSI est une école d’informatique qui propose des programmes de Bac à Bac+5 et de la formation continue. Quel que soit votre profil ou votre situation, vous pouvez accéder à la formation informatique et à un des programmes EPSI en admission directe ou en admission parallèle. \n\n La formation informatique de l’EPSI se compose de deux cycles : \n\n • 1er  CYCLE : Le  programme Bachelor informatique, prépare les apprenants à un titre de niveau II (Bac +3/4) certifié par le RNCP . \n\n • 2nd CYCLE : Le programme Ingénierie  informatique  prépare les apprenants à un titre de niveau I (Bac+5) « Expert en informatique et système d’information » certifié par le RNCP. \n\n À partir de la 3ème année, les apprenants peuvent suivre leur formation informatique en initial ou par alternance.'
+        description: 'L’EPSI est une école d’informatique qui propose des programmes de Bac à Bac+5 et de la formation continue. Quel que soit votre profil ou votre situation, vous pouvez accéder à la formation informatique et à un des programmes EPSI en admission directe ou en admission parallèle. \n\n La formation informatique de l’EPSI se compose de deux cycles : \n\n • 1er  CYCLE : Le  programme Bachelor informatique, prépare les apprenants à un titre de niveau II (Bac +3/4) certifié par le RNCP . \n\n • 2nd CYCLE : Le programme Ingénierie  informatique  prépare les apprenants à un titre de niveau I (Bac+5) « Expert en informatique et système d’information » certifié par le RNCP.'
       },
       right: {
-        image: 'azerty',
+        image: Course2,
         title: 'skdbrejbfke',
         description: 'uhkdsuh'
       }
