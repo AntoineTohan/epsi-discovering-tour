@@ -7,6 +7,9 @@ import Swal from 'sweetalert2'
 import BasicAlert from '../Alerts/basicAlert'
 import StepAlert from '../Alerts/StepsAlert'
 import Stepper from '../Stepper/Stepper'
+import ContactALert from '../Alerts/contactAlert'
+import BdeAlert from '../Alerts/bdeAlert'
+
 
 import getScene from './scenes'
 import getHotspots from './hotspots'
@@ -21,6 +24,16 @@ import './../../App.css'
     Swal(Object.assign({}, params, {
       target: '.pnlm-render-container',
       html: ReactDOMServer.renderToStaticMarkup(<BasicAlert text={params.text} image={params.img}/>),
+      animation: false,
+      customClass: 'animated fadeIn'
+    }))
+  }
+
+  //    Modal bde
+  const openModalbde = (params) => {
+    Swal(Object.assign({}, params, {
+      target: '.pnlm-render-container',
+      html: ReactDOM.renderToStaticMarkup(<BdeAlert text={params.text}/>),
       animation: false,
       customClass: 'animated fadeIn'
     }))
@@ -50,29 +63,25 @@ import './../../App.css'
 // Modal Contact
   const openModalContact = (params) =>{
     Swal.mixin({
-      input: 'text',
-      confirmButtonText: 'Next &rarr;',
       showCancelButton: true,
       progressSteps: ['1', '2', '3']
     }).queue([
       {
-        title: 'Question 1',
-        text: 'Chaining swal2 modals is easy'
+        title: params.title,
+        target: '.pnlm-render-container',
+        html: ReactDOM.renderToStaticMarkup(<ContactALert step={1}/>)
       },
-      'Question 2',
-      'Question 3'
-    ]).then((result) => {
-      if (result.value) {
-        Swal({
-          title: 'All done!',
-          html:
-            'Your answers: <pre><code>' +
-              JSON.stringify(result.value) +
-            '</code></pre>',
-          confirmButtonText: 'Lovely!'
-        })
+      {
+        title: params.title,
+        target: '.pnlm-render-container',
+        html: ReactDOM.renderToStaticMarkup(<ContactALert step={2}/>)
+      },
+      {
+        title: params.title,
+        target: '.pnlm-render-container',
+        html: ReactDOM.renderToStaticMarkup(<ContactALert step={3}/> )
       }
-    })
+    ])
   }
 const styles = theme => ({
   progress: {
@@ -110,18 +119,20 @@ class Viewer extends Component {
     }
     
     if(hotspot.modal) {
-      if(hotspot.modal.alert=='basic')
+      if(hotspot.modal.alert==='basic')
       {
         openModal(hotspot.modal)
-      }else if(hotspot.modal.alert=='step'){
+      }else if(hotspot.modal.alert==='step'){
         openModalSteps(hotspot.modal)
-      }else if(hotspot.modal.alert=='contact'){
+      }else if(hotspot.modal.alert==='contact'){
         if(!hotspot.modal.IsAlreadyPass){
           openModal(hotspot.modal)
           hotspot.modal.IsAlreadyPass=true
         }else{
           openModalContact(hotspot.modal)
         }
+      }else if(hotspot.modal.alert==='bde'){
+        openModalbde(hotspot.modal)
       }
       return
     }
@@ -164,6 +175,7 @@ class Viewer extends Component {
           autoLoad
           showFullscreenCtrl
           orientationOnByDefault
+          hotSpotDebug
         >
           {getHotspots(sceneKey).map(hotspot => (
               <Pannellum.Hotspot
