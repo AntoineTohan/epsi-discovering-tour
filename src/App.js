@@ -41,8 +41,8 @@ const styles = theme => ({
 
 class App extends Component {
   
-  constructor(props) {    
-    
+  constructor(props) {
+        
     super(props)
 
     this.state = {
@@ -55,7 +55,7 @@ class App extends Component {
   handleSceneChange(sceneKey) {
     this.setState({sceneKey: sceneKey})
   }
-  render() {
+  render() { 
     const { sceneKey } = this.state
     const { classes } = this.props
     const scene = getScene(sceneKey)
