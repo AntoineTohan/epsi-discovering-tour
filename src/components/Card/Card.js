@@ -49,11 +49,9 @@ function ImgMediaCard(props) {
             {title}
           </Typography>
           <Typography component="p" className={`${classes.text}`}>
-            <div>
-              {description.split('\n\n').map(line => (
-                <span> {line} <br /></span>
+              {description.split('\n\n').map((line, idx) => (
+                <span key={idx}> {line} <br /></span>
               ))}
-            </div>
           </Typography>
       
         </CardContent>
