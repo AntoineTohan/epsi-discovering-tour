@@ -15,7 +15,7 @@ const getText = (text) => text ? text.split('\n').map(line => (
 )) : ''
 
 function StepAlert1(props) {
-  const { classes, theme, text } = props;
+  const { classes, text } = props;
 
   return (
         <Grid container>
@@ -33,7 +33,7 @@ function StepAlert1(props) {
 }
 
 function StepAlert2(props) {
-    const { classes, theme, text } = props;
+    const { classes, text } = props;
   
     return (
           <Grid container>
