@@ -13,15 +13,17 @@
   bottom: 0px;
   animation: fadeIn 3s ease-out forwards, fadeOut 3s forwards 3s;
 }
-.swal2-popup{
+
+.swal2-popup {
   width: 60%
 }
+
 @keyframes fadeOut {
-  0% {opacity: 1; width: 60%;}
+  0% {opacity: 1; width: 100%;}
   100% {opacity: 0; width: 0%;}
 }
 
 @keyframes fadeIn {
   0% {width: 0%;}
-  100% {width: 60%;}
+  100% {width: 100%;}
 }

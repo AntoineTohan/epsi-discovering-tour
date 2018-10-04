@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom/server'
+import ReactDOM from 'react-dom'
+import ReactDOMServer from 'react-dom/server'
 import { Pannellum } from 'pannellum-react'
 import { withStyles } from '@material-ui/core/styles'
-import CircularProgress from '@material-ui/core/CircularProgress'
 import Swal from 'sweetalert2'
 import BasicAlert from '../Alerts/basicAlert'
 import StepAlert from '../Alerts/StepsAlert'
+import Stepper from '../Stepper/Stepper'
 import ContactALert from '../Alerts/contactAlert'
 import BdeAlert from '../Alerts/bdeAlert'
 
@@ -22,7 +23,7 @@ import './../../App.css'
     const openModal = (params) => {
     Swal(Object.assign({}, params, {
       target: '.pnlm-render-container',
-      html: ReactDOM.renderToStaticMarkup(<BasicAlert text={params.text} image={params.img}/>),
+      html: ReactDOMServer.renderToStaticMarkup(<BasicAlert text={params.text} image={params.img}/>),
       animation: false,
       customClass: 'animated fadeIn'
     }))
@@ -32,7 +33,7 @@ import './../../App.css'
   const openModalbde = (params) => {
     Swal(Object.assign({}, params, {
       target: '.pnlm-render-container',
-      html: ReactDOM.renderToStaticMarkup(<BdeAlert text={params.text}/>),
+      html: ReactDOMServer.renderToStaticMarkup(<BdeAlert text={params.text}/>),
       animation: false,
       customClass: 'animated fadeIn'
     }))
@@ -48,12 +49,12 @@ import './../../App.css'
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={1} text={params.text1} image={params.img}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<StepAlert step={1} text={params.text1} image={params.img}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={2} text={params.text2} image={params.img}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<StepAlert step={2} text={params.text2} image={params.img}/>)
       }
 
     ])
@@ -68,17 +69,17 @@ import './../../App.css'
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={1}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={1}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={2}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={2}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={3}/> )
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={3}/> )
       }
     ])
   }
@@ -103,10 +104,9 @@ class Viewer extends Component {
   }
   
   handleClick(hotspotId) {
-    const hotspot = getHotspots(this.state.sceneKey).find(hotspot => hotspot.id === hotspotId)
+    const hotspot = getHotspots(this.props.sceneKey).find(hotspot => hotspot.id === hotspotId)
     if(hotspot.nextScene) {
       this.props.handleSceneChange(hotspot.nextScene)
-      this.setState({sceneKey: hotspot.nextScene, firstScene: false})
       return
     }
     
@@ -130,13 +130,30 @@ class Viewer extends Component {
     }
   }
 
+  renderStepper() {
+    ReactDOM.render(
+      <Stepper 
+        handleSceneChange={this.props.handleSceneChange} 
+        sceneKey={this.props.sceneKey} 
+      />,
+      document.getElementsByClassName('pnlm-dragfix')[0]
+    )
+  }
+  
+  componentDidMount() {
+    this.renderStepper()
+  }
+
+  componentDidUpdate() {
+    this.renderStepper()
+  }
+
   render() {
     const { firstScene } = this.state
     const { sceneKey, classes } = this.props
     const scene = getScene(sceneKey)
     return (
       <div style={{background: 'black', height: '500px'}}>
-        <CircularProgress className={classes.progress} />
         <Pannellum
           id={firstScene ? '0' : sceneKey}
           width="100%"
