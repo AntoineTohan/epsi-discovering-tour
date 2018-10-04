@@ -161,7 +161,7 @@ const hotposts = {
       modal: {
         title: 'MyDil',
         text1:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
-        text2:'L’école vous propose un large choix de technologies et équipements à disposition pour tous vos projets.',
+        text2:'-Robot \n -Casque Vr \n Ordi 32 GRam \n -imprimante 3d',
         img: imgRobotMyDil,
         alert: 'step'
       }
@@ -228,6 +228,18 @@ const hotposts = {
       text: 'Salle de cours',
       type: 'door',
       nextScene: 'classroom'
+    },{
+      id: 'bde',
+      pitch: -0.541255449345375,
+      yaw: 39.668550751941765,
+      text: 'BDE',
+      type: 'info',
+      modal: {
+        title: 'Notre BDE !',
+        text:' le BDE il est cool',
+        img: imgRobotMyDil,
+        alert: 'bde'
+      }
     }, {
       id: 'cafeteria',
       pitch: -14.636699298091361,

@@ -11,17 +11,13 @@ const styles = theme => ({
 });
 
 function MediaControlCard(props) {
-  const { classes } = props;
+  const { classes, theme } = props;
 
   return (
         <Grid container>
-            <Grid item sm={12} md={12} lg={6} className={classes.image}>
-              <img src={props.image}/>
-            </Grid>
-            <Grid item sm={12} md={12} lg={6} className={classes.texte} alignItems='left'>
-            <Typography align='left'>
-              {props.text}
-            </Typography>
+            <Grid item xs={12} className={classes.image} alignContent='center'>
+                <iframe width="420" height="315" src="https://www.youtube.com/embed/-dLtAhdhdsM">
+                </iframe>
             </Grid>
         </Grid>
 
