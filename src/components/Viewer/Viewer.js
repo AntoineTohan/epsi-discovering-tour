@@ -48,12 +48,12 @@ import './../../App.css'
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={1} text={params.text1}/>)
+        html: ReactDOM.renderToStaticMarkup(<StepAlert step={1} text={params.text1} image={params.img}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={2} text={params.text2}/>)
+        html: ReactDOM.renderToStaticMarkup(<StepAlert step={2} text={params.text2} image={params.img}/>)
       }
 
     ])
