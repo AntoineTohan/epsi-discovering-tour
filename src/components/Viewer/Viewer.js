@@ -33,7 +33,7 @@ import './../../App.css'
   const openModalbde = (params) => {
     Swal(Object.assign({}, params, {
       target: '.pnlm-render-container',
-      html: ReactDOM.renderToStaticMarkup(<BdeAlert text={params.text}/>),
+      html: ReactDOMServer.renderToStaticMarkup(<BdeAlert text={params.text}/>),
       animation: false,
       customClass: 'animated fadeIn'
     }))
@@ -49,12 +49,12 @@ import './../../App.css'
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={1} text={params.text1} image={params.img}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<StepAlert step={1} text={params.text1} image={params.img}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<StepAlert step={2} text={params.text2} image={params.img}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<StepAlert step={2} text={params.text2} image={params.img}/>)
       }
 
     ])
@@ -69,17 +69,17 @@ import './../../App.css'
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={1}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={1}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={2}/>)
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={2}/>)
       },
       {
         title: params.title,
         target: '.pnlm-render-container',
-        html: ReactDOM.renderToStaticMarkup(<ContactALert step={3}/> )
+        html: ReactDOMServer.renderToStaticMarkup(<ContactALert step={3}/> )
       }
     ])
   }
