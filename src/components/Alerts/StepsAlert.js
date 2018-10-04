@@ -20,7 +20,7 @@ function StepAlert1(props) {
   return (
         <Grid container>
             <Grid item xs={6}>
-                <img src={imgSecretariat}/>
+                <img alt='Sécretariat 1' src={imgSecretariat}/>
             </Grid>
             <Grid item xs={6} className={classes.texte} alignItems='left'>
                 <Typography variant="body2" gutterBottom>
@@ -38,7 +38,7 @@ function StepAlert2(props) {
     return (
           <Grid container>
               <Grid item xs={6}>
-                  <img src={imgSecretariat}/>
+                  <img alt='Sécretariat 2' src={imgSecretariat}/>
               </Grid>
               <Grid item xs={6} className={classes.texte} alignItems='left'>
                 {getText(text)}

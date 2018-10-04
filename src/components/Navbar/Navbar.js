@@ -3,7 +3,10 @@ import { withStyles } from '@material-ui/core/styles'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import CameraIcon from '@material-ui/icons/PhotoCamera'
+import Grid from '@material-ui/core/Grid'
+
+import epsiImg from '../../assets/img/navbar/epsi2.png'
+import wisImg from '../../assets/img/navbar/logo_WIS.png'
 
 const styles = theme => ({
 	root: {
@@ -21,34 +24,54 @@ const styles = theme => ({
 		backgroundColor:'#dedddd',
 	},
 	imagesWis: {
-		width:'90px',
-		height: '90px',
-		position: 'relative',
-		float: 'right',
-		margin: '0 10px 0 0'
+		textAlign: 'left',
 	},
 	imagesEpsi: {
-		width:'125px',
-		height: '75px',
-		position: 'relative',
-		float: 'left',
-		margin: '0 0 0 10px'
+		textAlign: 'right',
 	},
 	textAlignCenter: {
 		textAlign: 'center',
-	}
+	},
+	imageEpsiSize:{
+		height:'70px',
+		width:'110px',
+		margin:' 10px 0px 10px 0px'
+	},
+	imageWisSize:{
+		height:'70px',
+		width:'70px',
+		margin:' 10px 20px 10px 0px'
+	},
+	colorNavbar: {
+		backgroundColor:'#271549',
+	},
+	title: {
+    fontFamily:'Roboto, sans-serif',
+  },
+  text: {
+    fontFamily:'Montserrat, sans-serif',
+  }
 })
 
 class Navbar extends Component {
   render() {
 		const { classes } = this.props
     return (
-      <AppBar position="static" className={classes.appBar}>
+      <AppBar position="static" className={classes.colorNavbar}>
         <Toolbar>
-          <CameraIcon className={classes.icon} />
-          <Typography variant="title" color="inherit" noWrap>
-            Album layout
-          </Typography>
+					<Grid container direction="row"justify="space-between" alignItems="center">
+						<Grid item className={classes.imagesWis} xs={4}>
+							<img alt='Logo école Wis' className={classes.imageWisSize} src={wisImg}></img>
+						</Grid>
+						<Grid item  className={`${classes.title}`} justify='center' container xs={4}>
+							<Typography variant="title" color="inherit" noWrap>
+							EPSI WIS DISCOVERING TOUR
+							</Typography>
+						</Grid>
+						<Grid item className={classes.imagesEpsi} xs={4}>
+							<img alt='Logo école EPSI' className={classes.imageEpsiSize} src={epsiImg}></img>
+						</Grid>
+					</Grid>
         </Toolbar>
       </AppBar>
     );

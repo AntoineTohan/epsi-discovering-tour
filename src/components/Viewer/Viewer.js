@@ -97,7 +97,6 @@ class Viewer extends Component {
     
     this.state = {
       sceneKey: 'outside',
-      activeSteps: ['outside'],
       firstScene: true
     }
     
@@ -108,13 +107,6 @@ class Viewer extends Component {
     const hotspot = getHotspots(this.props.sceneKey).find(hotspot => hotspot.id === hotspotId)
     if(hotspot.nextScene) {
       this.props.handleSceneChange(hotspot.nextScene)
-      if(!this.state.activeSteps.includes(this.props.sceneKey)) {
-        this.setState({
-          sceneKey: hotspot.nextScene,
-          activeSteps: [...this.state.activeSteps, this.props.sceneKey],
-          firstScene: false
-        })
-      }
       return
     }
     
@@ -143,7 +135,6 @@ class Viewer extends Component {
       <Stepper 
         handleSceneChange={this.props.handleSceneChange} 
         sceneKey={this.props.sceneKey} 
-        activeSteps={this.state.activeSteps} 
       />,
       document.getElementsByClassName('pnlm-dragfix')[0]
     )
