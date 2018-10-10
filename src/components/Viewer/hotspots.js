@@ -1,4 +1,6 @@
 import imgRobotMyDil from '../../assets/img/info/robotmydil.jpg'
+import competence from '../../assets/img/info/competence.jpg'
+import formulaire from '../../assets/img/info/formulaire.jpg'
 import baby from '../../assets/img/info/baby.jpg'
 import coffe from '../../assets/img/info/coffee.jpg'
 import detente from '../../assets/img/info/detente.jpg'
@@ -25,8 +27,8 @@ const hotposts = {
       text: 'Bancs',
       type: 'info',
       modal: {
-        title: 'Détentez-Vous',
-        text:'espace détente : Un environnement détente et repos est destiné aux étudiants. Le doux du sud permet de profiter pleinement de son temps de pause et de faire le plein de vitamine D. ',
+        title: 'Détendez-Vous',
+        text:'Un environnement détente et repos est destiné aux étudiants. Le doux du sud permet de profiter pleinement de son temps de pause et de faire le plein de vitamine D. ',
         img: detenteExterieur,
         alert: 'basic'
       }
@@ -81,11 +83,11 @@ const hotposts = {
       pitch: -10.94462892729827,
       yaw: -30.3478479304976,
       text: 'visitorInfo',
-      type: 'info',
+      type: 'infoPlus',
       modal: {
         title: 'Le Secrétariat',
         text:'À tout moment de votre visite n’hésitez pas à revenir par ici pour nous contacter.',
-        img: secretariat,
+        img: formulaire,
         alert: 'contact',
         IsAlreadyPass:false
       }
@@ -283,7 +285,7 @@ const hotposts = {
         title: 'Compétence',
         text1:' Bachelor Epsi - Concepteur Intégrateur Devops : Titre certifié niveau II “Administrateur Système Réseaux et Bases de Données” ou Titre certifié niveau II “ Concepteur Développeur Informatique”.',
         text2:' Bachelor Wis - : Chef de Projet Digital : Titre RNCP certifié de niveau II « Responsable de communication » ou Titre RNCP certifié de niveau II «Responsable management opérationnel commercial et marketing» et Titre RNCP certifié de niveau III «Développeur(se) Logiciel»',
-        img: imgRobotMyDil,
+        img: competence,
         alert: 'step'
       }
     }

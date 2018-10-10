@@ -14,8 +14,12 @@
   animation: fadeIn 3s ease-out forwards, fadeOut 3s forwards 3s;
 }
 
+.swal2-modal {
+  max-width: 50%
+}
+
 .swal2-popup {
-  width: 60%
+  max-width: 50% !important
 }
 
 @keyframes fadeOut {

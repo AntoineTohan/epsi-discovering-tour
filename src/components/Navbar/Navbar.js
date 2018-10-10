@@ -61,7 +61,9 @@ class Navbar extends Component {
         <Toolbar>
 					<Grid container direction="row"justify="space-between" alignItems="center">
 						<Grid item className={classes.imagesWis} xs={4}>
+						<a href="http://www.wis-ecoles.com/" target="_blank">
 							<img alt='Logo école Wis' className={classes.imageWisSize} src={wisImg}></img>
+						</a>
 						</Grid>
 						<Grid item  className={`${classes.title}`} justify='center' container xs={4}>
 							<Typography variant="title" color="inherit" noWrap>
@@ -69,7 +71,9 @@ class Navbar extends Component {
 							</Typography>
 						</Grid>
 						<Grid item className={classes.imagesEpsi} xs={4}>
+						<a href="http://www.epsi.fr/" target="_blank">
 							<img alt='Logo école EPSI' className={classes.imageEpsiSize} src={epsiImg}></img>
+						</a>
 						</Grid>
 					</Grid>
         </Toolbar>

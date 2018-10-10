@@ -37,6 +37,16 @@
   background-size: contain;
 }
 
+.infoPlus .in {
+  background: url('../src/assets/img/icons/info.png');
+  background-size: contain;
+  background-color: lightgreen !important;
+}
+
+.infoPlus .out {
+  border: 5px solid lightgreen !important;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
