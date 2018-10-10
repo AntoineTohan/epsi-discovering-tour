@@ -48,7 +48,7 @@ function ImgMediaCard(props) {
           <Typography gutterBottom variant="headline" component="h2" className={`${classes.title}`}>
             {title}
           </Typography>
-          <Typography component="p" className={`${classes.text}`}>
+          <Typography component="p" className={`${classes.text}`} align={"justify"}>
               {description.split('\n\n').map((line, idx) => (
                 <span key={idx}> {line} <br /></span>
               ))}

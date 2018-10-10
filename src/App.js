@@ -76,7 +76,7 @@ class App extends Component {
           <div className={classes.cardContainer}>
             <Grid container className={`${classes.layout} ${classes.cardGrid}`}>
               <Grid item container sm={12} md={12} lg={12} justify={"center"} direction="column" alignItems="center">
-              <Typography gutterBottom variant="headline" component="h1" className={`${classes.title}`}>Les informations utiles sur {scene.title.toLowerCase()}</Typography>
+              <Typography gutterBottom variant="headline" component="h1" className={`${classes.title}`}>Les informations utiles sur {scene.titleCard.toLowerCase()}</Typography>
               <hr className={`${classes.hrSeparator}`}/>
               </Grid>
               <Grid item container sm={12} md={12} lg={6} justify={"center"}>

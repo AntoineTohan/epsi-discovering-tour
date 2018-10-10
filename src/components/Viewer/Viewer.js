@@ -150,7 +150,7 @@ class Viewer extends Component {
 
   render() {
     const { firstScene } = this.state
-    const { sceneKey, classes } = this.props
+    const { sceneKey } = this.props
     const scene = getScene(sceneKey)
     return (
       <div style={{background: 'black', height: '500px'}}>

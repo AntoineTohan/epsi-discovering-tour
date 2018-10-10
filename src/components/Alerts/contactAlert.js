@@ -18,6 +18,10 @@ const styles = theme => ({
   menu: {
     width: 200,
   },
+  inputContainer: {
+    width: '100%',
+    textAlign: 'center'
+  }
 });
 
 
@@ -27,19 +31,17 @@ class TextFieldsStepOne extends React.Component {
     const { classes } = this.props;
 
     return (
-      <form className={classes.container} noValidate autoComplete="off">
+      <form className={`${classes.container}`} noValidate autoComplete="off">
         <TextField
           id="standard-Prenom"
-          label="Prenom"
           placeholder="Prenom"
-          className={classes.textField}
+          className={`${classes.inputContainer} ${classes.textField}`}
           margin="normal"
         />
         <TextField
           id="standard-Nom"
-          label="Nom"
           placeholder="Nom"
-          className={classes.textField}
+          className={`${classes.inputContainer} ${classes.textField}`}
           margin="normal"
         />
       </form>
@@ -62,9 +64,8 @@ class TextFieldsStepTwo extends React.Component {
         <form className={classes.container} noValidate autoComplete="off">
           <TextField
             id="standard-E-mail"
-            label="E-mail"
             placeholder="E-mail"
-            className={classes.textField}
+            className={`${classes.inputContainer} ${classes.textField}`}
             margin="normal"
           />
         </form>
@@ -85,6 +86,7 @@ class TextFieldsStepTwo extends React.Component {
           placeholder="Une Question ?"
           multiline
           rowsMax="4"
+          style={{width: '100%'}}
           className={classes.textField}
           margin="normal"
         />

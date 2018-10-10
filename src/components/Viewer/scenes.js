@@ -32,53 +32,57 @@ const scenes = {
   outside: {
     path: outside,
     title: 'L\'extérieur',
+    titleCard: 'L\'extérieur',
     infos: {
       left: {
         image: Foodtruck,
-        title: 'uhnfknx',
-        description: 'kjbvkjbv'
+        title: 'Les foodtrucks',
+        description: 'Foodtrucks de la semaine:\n\n ● Lundi: UNCLE STEEVE (Burger, americain,  panini)\n\n ● Mardi:  COOKOLING (Chinois)\n\n ● Mercredi:  SELTZ (Italien)\n\n ● Jeudi:   LA STATION (Pâtes fraîches)\n\n ● Vendredi:  TORO TRUCK (Burger de taureau)\n\n'
       },
       right: {
         image: Snow,
-        title: 'skdbrejbfke',
-        description: 'uhkdsuh'
+        title: 'L’hiver c’est détente',
+        description: 'Et oui sur Montpellier aussi de temps en temps la neige s’invite sur notre espace détente entre un café et une ligne de code.'
       }
     }
   },
   reception: {
     path: reception,
     title: 'La réception',
+    titleCard: 'La réception',
     infos: {
       left: {
         image: hall1,
-        title: 'uhnfknx',
-        description: 'kjbvkjbv'
+        title: 'L\'accueil',
+        description: 'C’est l’endroit dédié à l’aspect administratif, mais c’est aussi un lieu d’accueil ou lorsque vous êtes perdu l’équipe du secrétariat sera vous aider à trouver votre chemin.'
       },
       right: {
         image: hall2,
-        title: 'skdbrejbfke',
-        description: 'uhkdsuh'
+        title: 'L\'étage du bâtiment',
+        description: 'C’est en montant les escaliers que vous accéderez au bureau relation jeune, relation entreprise et le bureau de Madame la directrice.'
       }
     }
   },
   hall: {
     path: hall,
     title: 'Le hall',
+    titleCard: 'Le salon',
     infos: {
       left: {
         image: salon1,
-        title: 'uhnfknx',
-        description: 'kjbvkjbv'
+        title: 'Tournois de jeux vidéos',
+        description: 'Pendant notre événement sur le jeux vidéo notre espace détente intérieur se transforme en salon de jeux consoles des tournois sur différents jeux comme FIFA, Dragon ball Z et bien d’autres'
       },
       right: {
         image: salon2,
-        title: 'skdbrejbfke',
-        description: 'uhkdsuh'
+        title: 'Une petite crêpe ?',
+        description: 'Régulièrement des ventes de crêpes sont organisées par le BDE pour offrir aux élèves un petite collation gourmande et également récolter des fonds pour organiser toujours plus d’événements.'
       }
     }
   },
   myDil: {
     path: myDil,
+    titleCard: 'Le laboratoire MyDil',
     title: 'Le laboratoire MyDil',
     infos: {
       left: {
@@ -96,6 +100,7 @@ const scenes = {
   cafeteria: {
     path: cafeteria,
     title: 'La Cafétéria',
+    titleCard: 'La Cafétéria',
     infos: {
       left: {
         image: cafet1,
@@ -112,22 +117,24 @@ const scenes = {
   hallway: {
     path: hallway,
     title: 'Les couloirs',
+    titleCard: 'Le BDE',
     infos: {
       left: {
         image: Game,
-        title: 'uhnfknx',
-        description: 'kjbvkjbv'
+        title: 'Geekathlon',
+        description: 'Vous êtes un gamer, un marathon de jeux vidéo dans votre campus pendant 24H ! Ça vous tente ? Participez à l’expérience avec vos ami(e)s !'
       },
       right: {
         image: Wei,
-        title: 'skdbrejbfke',
-        description: 'uhkdsuh'
+        title: 'WEI',
+        description: 'L’EPSI et WIS c’est aussi un weekend d’intégration de folie avec votre BDE qui se plie en quatre vous préparer un emplois du temps de ministre rempli d’activités !'
       }
     }
   },
   classroom: {
     path: classroom,
-    title: 'Les salle de cours',
+    title: 'Les salles de cours',
+    titleCard: 'Les salles de cours',
     infos: {
       left: {
         image: Course1,
@@ -136,8 +143,8 @@ const scenes = {
       },
       right: {
         image: Course2,
-        title: 'skdbrejbfke',
-        description: 'uhkdsuh'
+        title: 'Le cursus WIS',
+        description: 'WIS (Web International School) est une école qui propose une formation web et digital business accessible après le Bac ou en admission parallèle.\n\n\n\nWIS forme les apprenants aux métiers du web (Développement web et mobile, e-commerce, communication numérique, webmarketing et management des industries numériques …) et accompagne les entreprises dans leur transformation digitale.\n\n\n\nLes formations WIS sont accessibles en initial ou en alternance.'
       }
     }
   }

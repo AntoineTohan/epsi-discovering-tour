@@ -3,8 +3,6 @@ import { withStyles } from '@material-ui/core/styles'
 import SpeedDial from '@material-ui/lab/SpeedDial'
 import SpeedDialIcon from '@material-ui/lab/SpeedDialIcon'
 import Chip from '@material-ui/core/Chip'
-import SpeedDialAction from '@material-ui/lab/SpeedDialAction'
-import Avatar from '@material-ui/core/Avatar'
 import outside   from '../../assets/img/stepper/outside.png'
 import myDil     from '../../assets/img/stepper/myDil.png'
 import cafeteria from '../../assets/img/stepper/cafeteria.png'
@@ -105,9 +103,10 @@ class Stepper extends React.Component {
           onClose={this.handleClose}
           open={open}
         >
-          {steps.map(step => this.state.open && (
+          {steps.map((step, idx) => this.state.open && (
             <Chip
-              avatar={<img src={step.icon} className={classes.icon}/>}
+              key={idx}
+              avatar={<img alt={step.tooltip} src={step.icon} className={classes.icon}/>}
               label={step.tooltip}
               clickable
               className={classes.chip}
